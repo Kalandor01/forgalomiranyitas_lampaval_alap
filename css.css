@@ -1,3 +1,4 @@
+
 .keresztezodes {
     background: whitesmoke;
     width: 100vw;
@@ -6,19 +7,24 @@
     grid-template-columns: 30% 200px auto;
     grid-template-rows: 40% 20% auto;
 }
+
 .ut {
     background: lightgray;
 }
+
 img {
     width: 100px;
 }
+
 .forgalom {
     position: relative;
 }
-.auto {
-/*helyezd el az autót a lámpa alatt az úttesten!*/
 
+.auto {
+    position: absolute;
+    top: 45%;
 }
+
 .lampa {
     position: absolute;
     width: 20px;
@@ -32,19 +38,23 @@ img {
     grid-template-rows: 1fr 1fr 1fr;
     grid-gap: 5px;
 }
+
 .lampa div {
     border-radius: 9px;
-    /* background-color: lavender; */
 }
+
 .piros {
     background: rgb(146, 35, 35);
 }
+
 .sarga {
     background: rgb(230, 196, 84);
 }
+
 .zold {
     background: rgb(59, 190, 47);
 }
+
 .balroljobbra {
     /*https://webiskola.hu/css-ismeretek/css-animacio-animation-keszitese/*/
     animation-name: animacio;
@@ -56,11 +66,12 @@ img {
     animation-timing-function: ease-in;
     animation-fill-mode: forwards;
 }
+
 @keyframes animacio {
     from {
         left: calc(30% - 100px);
     }
     to {
-        left: 100%;
+        left: 105%;
     }
 }
